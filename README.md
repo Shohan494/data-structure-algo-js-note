@@ -85,3 +85,15 @@ global
 #### Functions
 
 > Function Arguments are variables with which a function is supposed to do something.
+
+#### OOP
+###### Object-oriented programming
+
+> JavaScript objects are very simple collections of name-value pairs. There are two ways of creating a simple object in JavaScript. The first way is as follows:
+```
+var obj = new Object();
+```
+And the second way is as follows:
+```
+var obj = {};
+```
