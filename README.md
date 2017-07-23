@@ -21,7 +21,7 @@ console.log("price: "+ price);
 console.log("nullVar: "+ nullVar);
 console.log("und: "+ und);
 ```
-Output:
+> Output:
 ```
 num: 3
 name: Packt
@@ -53,7 +53,7 @@ console.log(myOtherFunction());
 
 console.log(myOtherVariable);
 ```
-Output:
+> Output:
 ```
 global
 local
@@ -75,8 +75,13 @@ global
 
 
 #### '==' and '===' Confusions
+
 ###### For '==':
 ![Alt text](http://i.imgur.com/kaNMTus.png "Optional title")
 
-####### For '===':
+###### For '===':
 ![Alt text](http://i.imgur.com/IgIovXL.png "Optional title")
+
+#### Functions
+
+> Function Arguments are variables with which a function is supposed to do something.
