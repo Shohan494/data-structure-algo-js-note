@@ -97,7 +97,7 @@ And the second way is as follows:
 ```
 var obj = {};
 ```
-In object-oriented programming (OOP), an object is an instance of a class. A class defines the characteristics of the object. This is how we can declare a class that represents a book:
+> In object-oriented programming (OOP), an object is an instance of a class. A class defines the characteristics of the object. This is how we can declare a class that represents a book:
 ```
 function Book(title, pages, isbn){
 this.title = title;
