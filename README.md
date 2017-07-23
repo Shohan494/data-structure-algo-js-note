@@ -72,3 +72,11 @@ global
 | Number     | (+0, -0, or NaN) is False ; otherwise True.  |
 | String     | Length is 0 then False, Otherwise True       |
 | Object     | True                                         |
+
+
+#### '==' and '===' Confusions
+###### For '==':
+![Alt text](http://i.imgur.com/kaNMTus.png "Optional title")
+
+####### For '===':
+![Alt text](http://i.imgur.com/IgIovXL.png "Optional title")
