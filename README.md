@@ -116,7 +116,15 @@ var empty = [];
 ```
 // adds to the last
 numbers.push(11,12);
+
 // adds to the first
 numbers.unshift(-2);
 numbers.unshift(-4, -3);
+```
+basically the operation does this:
+```
+for (var i=numbers.length; i>=0; i--){
+numbers[i] = numbers[i-1];
+}
+numbers[0] = -1;
 ```
