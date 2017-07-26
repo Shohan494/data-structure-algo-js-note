@@ -218,7 +218,10 @@ console.log(myEvery);
 ```
 if we want to sum up all the values in an array
 ```
-numbers.reduce(function(previous, current, index){
-  return previous + current;
+var numbers = [2,0,4,5];
+var reduceResult = numbers.reduce(function(previous, current, index){
+return previous + current + index;
 });
+
+console.log(reduceResult);
 ```
