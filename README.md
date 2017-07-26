@@ -253,3 +253,16 @@ function compare(a, b) {
 
 console.log(numbers.sort(compare));
 ```
+> Understanding Javascript .sort parameter:
+
+.sort takes an optional parameter, which should be a function.
+
+.sort then calls that function repeatedly, passing it a pair of values from the array (the a and b parameters). The function then returns a value which is interpreted like so:
+
+- If the returned value is less than 0, then a < b
+- If the returned value is greater than 0, then a > b
+- If the returned value is exactly 0, then a == b
+
+Using this, .sort figures out the order of the items using whatever sorting algorithm the browser has been programmed to use.
+
+In the absence of a sorting function, .sort will sort the items as strings - this is just an arbitrary point of the design. Ideally you should be passing a function to be used whenever you want to .sort things, as is the case here where the function forces the values to be compared as numbers.
