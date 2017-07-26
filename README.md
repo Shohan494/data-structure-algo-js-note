@@ -266,3 +266,39 @@ console.log(numbers.sort(compare));
 Using this, .sort figures out the order of the items using whatever sorting algorithm the browser has been programmed to use.
 
 In the absence of a sorting function, .sort will sort the items as strings - this is just an arbitrary point of the design. Ideally you should be passing a function to be used whenever you want to .sort things, as is the case here where the function forces the values to be compared as numbers.
+
+###### Source: Stack Overflow
+
+###### Sorting objects:
+```
+var friends = [
+    {name: 'John', age: 30},
+    {name: 'Ana', age: 20},
+    {name: 'Chris', age: 25}
+];
+
+function comparePerson(a, b){
+    if (a.age < b.age){
+        return -1
+    }
+    if (a.age > b.age){
+        return 1
+    }
+    return 0;
+}
+
+console.log(friends.sort(comparePerson));
+
+var names =['Ana', 'ana', 'john', 'John'];
+console.log(names.sort());
+
+console.log(names.sort(function(a, b){
+    if (a.toLowerCase() < b.toLowerCase()){
+        return -1
+    }
+    if (a.toLowerCase() > b.toLowerCase()){
+        return 1
+    }
+    return 0;
+}));
+```
