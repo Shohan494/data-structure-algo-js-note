@@ -389,6 +389,8 @@ function Stack() {
     };
     this.print = function(){
         console.log(items.toString());
+        //as array
+        //console.log(items.toString());
     };
     this.toString = function(){
         return items.toString();
