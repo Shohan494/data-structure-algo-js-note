@@ -159,3 +159,18 @@ position 5. We can again use the splice method to do this:
 ```
 numbers.splice(5,0,5,6,7);
 ```
+###### Multi-Dimensional Array
+```
+var averageTemp = [];
+averageTemp[0] = [72,75,79,79,81,81];
+averageTemp[1] = [81,79,75,75,73,72];
+
+console.log(averageTemp);
+console.log("\n");
+
+for (var i=0; i<averageTemp.length;i++){
+  for (var j=0; j<averageTemp[i].length; j++){
+    console.log(averageTemp[i][j]);
+  }
+}
+```
