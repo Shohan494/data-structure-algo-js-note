@@ -129,16 +129,6 @@ numbers[i] = numbers[i-1];
 }
 numbers[0] = -1;
 ```
-To remove a value from the beginning of the array, we can use the following code:
-```
-var numbers = [1,2,4,5,6,7,8,9,0];
-
-for (var i=0; i<numbers.length - 1; i++){
-numbers[i] = numbers[i+1];
-}
-
-console.log(numbers);
-```
 To remove a value from the end of an array, we can use the pop method:
 ```
 numbers.pop();
@@ -147,6 +137,16 @@ To actually remove an element from the beginning of the array, we can use the sh
 method as follows:
 ```
 numbers.shift();
+```
+Manually to remove a value from the beginning of the array, we can use the following code:
+```
+var numbers = [1,2,4,5,6,7,8,9,0];
+
+for (var i=0; i<numbers.length - 1; i++){
+numbers[i] = numbers[i+1];
+}
+
+console.log(numbers);
 ```
 We can use the splice method to remove an element from an array by simply
 specifying the position/index we would like to delete from and how many
