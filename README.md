@@ -148,3 +148,14 @@ method as follows:
 ```
 numbers.shift();
 ```
+We can use the splice method to remove an element from an array by simply
+specifying the position/index we would like to delete from and how many
+elements we would like to remove:
+```
+numbers.splice(5,3);
+```
+If we want to insert numbers 5 to 7 back into the array starting from
+position 5. We can again use the splice method to do this:
+```
+numbers.splice(5,0,5,6,7);
+```
