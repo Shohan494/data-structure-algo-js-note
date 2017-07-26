@@ -198,10 +198,10 @@ for (var i=0; i<matrix3x3x3.length; i++){
     }
 }
 ```
-> Array Methods:
+###### Array Methods:
 ![Alt text](http://i.imgur.com/ZdrvIKX.png "Optional title")
 
-> every, some and map:
+every and map:
 ```
 var isEven = function (x) {
 // returns true if x is a multiple of 2.
@@ -216,7 +216,7 @@ var myMap = numbers.map(isEven);
 console.log(myMap);
 console.log(myEvery);
 ```
-if we want to sum up all the values in an array
+if we want to sum up all the values in an array, use reduce:
 ```
 var numbers = [2,0,4,5];
 var reduceResult = numbers.reduce(function(previous, current, index){
