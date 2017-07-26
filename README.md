@@ -302,3 +302,14 @@ console.log(names.sort(function(a, b){
     return 0;
 }));
 ```
+For accented characters, we can use the localeCompare method as well:
+```
+var names2 = ['Maève', 'Maeve'];
+console.log(names2.sort(function(a, b){
+return a.localeCompare(b);
+}));
+```
+And the output will be:
+```
+["Maeve", "Maève"]
+```
