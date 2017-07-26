@@ -198,3 +198,5 @@ for (var i=0; i<matrix3x3x3.length; i++){
     }
 }
 ```
+> Array Methods:
+![Alt text](http://i.imgur.com/ZdrvIKX.png "Optional title")
