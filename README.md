@@ -113,11 +113,12 @@ var empty = [];
 ```
 > Adding and removing elements
 
+adds to the last
 ```
-// adds to the last
 numbers.push(11,12);
-
-// adds to the first
+```
+adds to the first
+```
 numbers.unshift(-2);
 numbers.unshift(-4, -3);
 ```
@@ -127,4 +128,23 @@ for (var i=numbers.length; i>=0; i--){
 numbers[i] = numbers[i-1];
 }
 numbers[0] = -1;
+```
+To remove a value from the beginning of the array, we can use the following code:
+```
+var numbers = [1,2,4,5,6,7,8,9,0];
+
+for (var i=0; i<numbers.length - 1; i++){
+numbers[i] = numbers[i+1];
+}
+
+console.log(numbers);
+```
+To remove a value from the end of an array, we can use the pop method:
+```
+numbers.pop();
+```
+To actually remove an element from the beginning of the array, we can use the shift
+method as follows:
+```
+numbers.shift();
 ```
