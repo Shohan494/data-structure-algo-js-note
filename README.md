@@ -225,3 +225,31 @@ return previous + current + index;
 
 console.log(reduceResult);
 ```
+###### Sorting
+```
+var numbers = [2,0,4,5,6,8,9,3,1,7,10,11];
+
+var reversed = numbers.reverse();
+console.log(reversed);
+
+var sorted = numbers.sort();
+console.log(sorted);
+
+//sort() can take a function as parameter if we need custom sorting rules
+console.log(numbers.sort(function(a,b){
+  return a-b;
+}));
+
+function compare(a, b) {
+    if (a < b) {
+        return -1;
+    }
+    if (a > b) {
+        return 1;
+    }
+    // a must be equal to b
+    return 0;
+}
+
+console.log(numbers.sort(compare));
+```
