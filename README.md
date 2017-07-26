@@ -225,7 +225,7 @@ return previous + current + index;
 
 console.log(reduceResult);
 ```
-###### Sorting
+#### Sorting
 ```
 var numbers = [2,0,4,5,6,8,9,3,1,7,10,11];
 
@@ -313,3 +313,7 @@ And the output will be:
 ```
 ["Maeve", "Maève"]
 ```
+
+#### Searching
+
+
