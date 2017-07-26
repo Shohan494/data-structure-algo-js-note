@@ -336,7 +336,11 @@ The output will be as follows:
 1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-10
 ```
 ## Stacks
-
+A stack is an ordered collection of items that follows the LIFO (short for Last In
+First Out) principle. The addition of new items or the removal of existing items takes
+place at the same end. The end of the stack is known as the top and the opposite is
+known as the base. The newest elements are near the top, and the oldest elements
+are near the base.
 ```
 function Stack() {
     let items = [];
