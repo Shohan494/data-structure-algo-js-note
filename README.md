@@ -105,7 +105,7 @@ this.pages = pages;
 this.isbn = isbn;
 }
 ```
-#### Array
+## Array
 > Declaring an array:
 ```
 var numbers = [0,1,2,3,4,5,6,7,8,9];
@@ -266,8 +266,7 @@ console.log(numbers.sort(compare));
 Using this, .sort figures out the order of the items using whatever sorting algorithm the browser has been programmed to use.
 
 In the absence of a sorting function, .sort will sort the items as strings - this is just an arbitrary point of the design. Ideally you should be passing a function to be used whenever you want to .sort things, as is the case here where the function forces the values to be compared as numbers.
-
-###### Source: Stack Overflow
+(Source: Stack Overflow)
 
 ###### Sorting objects:
 ```
@@ -315,5 +314,25 @@ And the output will be:
 ```
 
 #### Searching
-
-
+Through indexOf and lastIndexOf we can get the postion of the value in an array:
+```
+console.log(numbers.indexOf(10));
+console.log(numbers.indexOf(100));
+numbers.push(10);
+console.log(numbers.lastIndexOf(10));
+console.log(numbers.lastIndexOf(100));
+```
+Outputting the array into a string
+```
+console.log(numbers.toString());
+```
+If we would like to separate the elements by a different separator, such as - , we can use the join method to do just that:
+```
+var numbersString = numbers.join('-');
+console.log(numbersString);
+```
+The output will be as follows:
+```
+1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-10
+```
+## Stack
