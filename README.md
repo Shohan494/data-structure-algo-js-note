@@ -200,3 +200,19 @@ for (var i=0; i<matrix3x3x3.length; i++){
 ```
 > Array Methods:
 ![Alt text](http://i.imgur.com/ZdrvIKX.png "Optional title")
+
+> every, some and map:
+```
+var isEven = function (x) {
+// returns true if x is a multiple of 2.
+console.log(x);
+return (x % 2 == 0) ? true : false;
+};
+
+var numbers = [2,0,4,5];
+
+var myEvery = numbers.every(isEven);
+var myMap = numbers.map(isEven);
+console.log(myMap);
+console.log(myEvery);
+```
