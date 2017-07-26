@@ -336,3 +336,34 @@ The output will be as follows:
 1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-10
 ```
 ## Stacks
+
+```
+function Stack() {
+    let items = [];
+    
+    this.push = function(element){
+        items.push(element);
+    };
+    this.pop = function(){
+        return items.pop();
+    };
+    this.peek = function(){
+        return items[items.length-1];
+    };
+    this.isEmpty = function(){
+        return items.length == 0;
+    };
+    this.size = function(){
+        return items.length;
+    };
+    this.clear = function(){
+        items = [];
+    };
+    this.print = function(){
+        console.log(items.toString());
+    };
+    this.toString = function(){
+        return items.toString();
+    };
+}
+```
