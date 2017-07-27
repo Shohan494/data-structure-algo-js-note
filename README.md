@@ -527,7 +527,7 @@ Math.floor(11 / 16); // 0
 
 digits = '0123456789ABCDEF';
 
-// in place of -- baseString += digits[remStack.pop()];
+// baseString += digits[remStack.pop()];
 baseString = digits[11]; // 'B'
 ```
 ## Queues
