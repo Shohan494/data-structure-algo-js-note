@@ -539,3 +539,25 @@ element added to the queue must wait at the end of the queue.
 
 #### Creating a queue
 
+First, we need a data structure that will store the elements of the queue. We can
+use an array to do it, just like we used for the Stack class in the previous chapter
+(you will notice the Queue and Stack class are very similar, just the principles for
+adding and removing the elements are different):
+```
+var items = [];
+```
+Next, we need to declare the methods available for a queue:
+
+- **enqueue(element(s)) :** This adds a new item (or several items) at the back
+of the queue.
+- **dequeue() :** This removes the first item from the queue (the item that is in
+the front of the queue). It also returns the removed element.
+- **front() :** This returns the first element from the queue, the first one added,
+and the first one that will be removed from the queue. The queue is not
+modified (it does not remove the element; it only returns the element for
+information purposes—very similar to the peek method from the Stack
+class).
+- **isEmpty() :** This returns true if the queue does not contain any elements
+and false if the queue is bigger than 0.
+- **size() :** This returns how many elements the queue contains. It is similar
+to the length property of the array.
