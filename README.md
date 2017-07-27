@@ -412,8 +412,12 @@ console.log(stack.isEmpty()); //outputs false
 
 stack.push(15);
 
-stack.pop();
-stack.pop();
+var pop1 = stack.pop();
+var pop2 = stack.pop();
+
+console.log('pop1', pop1 ); // 15
+console.log('pop2', pop2 ); // 11
+
 console.log(stack.size()); // outputs 2
 stack.print(); // outputs [5, 8]
 ```
@@ -470,6 +474,8 @@ Math.floor(11 % 16); // 11
 Math.floor(11 / 16); // 0
 
 digits = '0123456789ABCDEF';
+
+// in place of -- baseString += digits[remStack.pop()];
 baseString = digits[11]; // 'B'
 ```
 ## Queues
