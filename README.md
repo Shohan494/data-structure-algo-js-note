@@ -754,3 +754,28 @@ let names = ['John','Jack','Camila','Ingrid','Carl'];
 let winner = hotPotato(names, 7);
 console.log('The winner is: ' + winner);
 ```
+###### For a better understanding:
+```
+let items = [];
+
+enqueue = function(element){
+  return items.push(element);
+};
+
+dequeue = function(){
+  return items.shift();
+};
+
+enqueue("1st");
+enqueue("2nd");
+enqueue("3rd");
+enqueue("4th");
+enqueue("5th");
+
+dequeue();
+//enqueue(dequeue());
+//same as
+items.push(items.shift());
+// see what happens..
+console.log(items);
+```
