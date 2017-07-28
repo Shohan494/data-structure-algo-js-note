@@ -682,3 +682,75 @@ console.log('priorityQueue.enqueue("Camila", 4)')
 priorityQueue.enqueue("Camila", 4);
 priorityQueue.print();
 ```
+###### Hot Potato : Circle Queue
+```
+function Queue() {
+
+    let items = [];
+
+    this.enqueue = function(element){
+        items.push(element);
+    };
+
+    this.dequeue = function(){
+        return items.shift();
+    };
+
+    this.front = function(){
+        return items[0];
+    };
+
+    this.isEmpty = function(){
+        return items.length == 0;
+    };
+
+    this.clear = function(){
+        items = [];
+    };
+
+    this.size = function(){
+        return items.length;
+    };
+
+    this.print = function(){
+        console.log(items.toString());
+    };
+}
+
+
+function hotPotato (nameList, num){
+
+    let queue = new Queue();
+
+    for (let i=0; i<nameList.length; i++){
+        queue.enqueue(nameList[i]);
+        console.log('Added in items: ', nameList[i]);
+    }
+
+    console.log("Players have been added, Game Begins!!");
+    console.log('\n');
+
+    let eliminated = '';
+    
+    while (queue.size() > 1){
+        console.log("\n");
+        console.log("inside while block as queue.size(): " + queue.size() +" > 1");
+        for (let i=0; i<num; i++){
+        console.log("inside for block due to while. i = " + i );
+        console.log("\n");
+          queue.enqueue(queue.dequeue());
+          console.log(queue.print());
+          //console.log(queue.enqueue(queue.dequeue()));
+        }
+        eliminated = queue.dequeue();
+        console.log(eliminated + ' was eliminated from the Hot Potato game.');
+        console.log(queue.print());
+    }
+    
+    return queue.dequeue();
+}
+
+let names = ['John','Jack','Camila','Ingrid','Carl'];
+let winner = hotPotato(names, 7);
+console.log('The winner is: ' + winner);
+```
